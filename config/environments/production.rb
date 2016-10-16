@@ -91,8 +91,7 @@ Rails.application.configure do
       :bucket => ENV['capcalera_s3_bucket_name'],
       :access_key_id => ENV['capcalera_aws_access_key_id'],
       :secret_access_key => ENV['capcalera_aws_secret_access_key'],
-      :s3_region => ENV['capcalera_aws_region'],
-      :force_path_style => true
+      :s3_region => ENV['capcalera_aws_region']
     }
   }
 end
