@@ -11,12 +11,8 @@ class ItesController < ApplicationController
   # GET /ites/1.json
   def show
     ite = Ite.find(params[:id])
-    #@doc = Nokogiri::XML(File.open("http://www.w3schools.com/xml/note.xml"))
-    #@doc = Nokogiri::XML(open("https://s3-eu-west-1.amazonaws.com/capcalera/ites/itexmls/000/000/006/original/1_Bloque_de_viviendas.xml"))
-    #@doc = Nokogiri::XML(open("https://s3-eu-west-1.amazonaws.com/capcalera/ites/itexmls/000/000/008/original/edifici.xml"))
-    @doc = Nokogiri::XML(open("https://s3-eu-west-1.amazonaws.com/capcalera/ites/itexmls/000/000/009/original/ce3x.xml?1476639760"))
+    @doc = Nokogiri::XML(open(ite.itexml.url))
     @url_ite = ite.itexml.url
-    #@missatge = @doc.xpath('//body').text
     @missatge = @doc.xpath('//Municipio').text
   end
 
