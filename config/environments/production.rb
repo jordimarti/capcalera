@@ -92,7 +92,7 @@ Rails.application.configure do
       :access_key_id => ENV['capcalera_aws_access_key_id'],
       :secret_access_key => ENV['capcalera_aws_secret_access_key'],
       :s3_region => ENV['capcalera_aws_region'],
-      :path_style => true
+      :force_path_style => true
     }
   }
 end
