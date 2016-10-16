@@ -14,3 +14,26 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.irregular 'projectista','projectistes'
+  inflect.irregular 'sistema','sistemes'
+  inflect.irregular 'identificacio', 'identificacions'
+  inflect.irregular 'fonamentacio', 'fonamentacions'
+  inflect.irregular 'estructura', 'estructures'
+  inflect.irregular 'coberta', 'cobertes'
+  inflect.irregular 'aigua', 'aigues'
+  inflect.irregular 'climatitzacio', 'climatitzacions'
+  inflect.irregular 'ventilacio', 'ventilacions'
+  inflect.irregular 'referencia', 'referencies'
+  inflect.irregular 'operacio', 'operacions'
+  inflect.irregular 'telecomunicacio', 'telecomunicacions'
+  inflect.irregular 'llicencia', 'llicencies'
+  inflect.irregular 'declaracio', 'declaracions'
+  inflect.irregular 'carrega', 'carregues'
+  inflect.irregular 'instalacio', 'instalacions'
+  inflect.irregular 'observacio', 'observacions'
+  inflect.irregular 'particio', 'particions'
+  inflect.irregular 'factura', 'factures'
+  inflect.irregular 'deficiencia', 'deficiencies'
+end

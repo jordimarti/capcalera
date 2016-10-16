@@ -1,0 +1,1 @@
+json.partial! "ites/ite", ite: @ite

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ites</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Edifici</th>
+      <th>Existeix</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ites.each do |ite| %>
+      <tr>
+        <td><%= ite.edifici_id %></td>
+        <td><%= ite.existeix %></td>
+        <td><%= link_to 'Show', ite %></td>
+        <td><%= link_to 'Edit', edit_ite_path(ite) %></td>
+        <td><%= link_to 'Destroy', ite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ite', new_ite_path %>

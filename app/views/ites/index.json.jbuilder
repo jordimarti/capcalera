@@ -1,0 +1,1 @@
+json.array! @ites, partial: 'ites/ite', as: :ite

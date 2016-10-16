@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Edifici:</strong>
+  <%= @ite.edifici_id %>
+</p>
+
+<p>
+  <strong>Existeix:</strong>
+  <%= @ite.existeix %>
+</p>
+
+<%= link_to 'Edit', edit_ite_path(@ite) %> |
+<%= link_to 'Back', ites_path %>

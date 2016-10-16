@@ -1,0 +1,13 @@
+<%= simple_form_for @ite, url: ites_path do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :edifici_id %>
+    <%= f.input :existeix %>
+    <%= f.input :itexml, as: :file %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
