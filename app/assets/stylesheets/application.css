@@ -12,4 +12,21 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+
+.footer-container {
+	padding: 30px;
+	border-top: 1px solid #ccc;
+}
+
+.footer-text-container {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.logo-caateeb {
+	max-width: 250px;
+	margin-bottom: 30px;
+}

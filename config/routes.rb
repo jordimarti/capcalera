@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :edificis
   resources :ites
   resources :deficiencies
   devise_for :users
   get 'home/index'
+  get 'home/contacta'
 
   root :to => "home#index"
 
